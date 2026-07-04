@@ -2,3 +2,10 @@ Ex_Files_CSS_EssT/
 temp/
 logs/
 build/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
