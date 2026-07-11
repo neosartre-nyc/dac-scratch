@@ -51,5 +51,7 @@
       "title": "pages",
       "path": "[[workspace]]/pages"
     }
-  ]
+  ],
+  "frontMatter.framework.id": "astro",
+  "frontMatter.preview.host": "http://localhost:4321"
 }
