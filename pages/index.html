@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="/css/styles.css" rel="stylesheet" />
+  <link href="/css/styles.css" rel="stylesheet" />  
+  <script>
+    fetch("hero-title.html")
+      .then(res => res.text())
+      .then(html => document.getElementById("hero-title").innerHTML = html);
+  </script>
+  
 
 <head>
   <meta charset="UTF-8">
@@ -10,30 +16,29 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bitter:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">  
   <title>Dangerous Angels Creative</title>
-</head>
+</head>  
 
 <!-- //  HEADER / INTRO  // -->
 <header>
   <nav class="bg-dark">
-    <a href="#top"><img src="/assets/images/dac_logoV02_20260424.png" height="55px" style="float: left;" alt="Logo"></a>
+    <a href="#top"><img src="/assets/images/dac_logoV02_20260424.png" height="60px" style="float: left;" alt="Logo"></a>
     <ul class="list-reset nav-list">
       <li><a href="#about">About</a>/</li>
       <li><a href="#projects">Projects</a>/</li>
       <li><a href="#resume">Resume</a>/</li>
       <li><a href="/pages/journal.html">Journal</a></li>
-    </ul>
-  </nav>
-  <hgroup>
-    <h1 style="font-size: 60px;">Dangerous Angels Creative</h1>
-    <h2 style="font-family: 'Alex Brush', cursive; font-size: 55px;">Natalie Reuchlein</h2>
-    <p style="font-family: 'Bitter', serif; font-weight: 700;font-size: 25px;">Media Designer</p>
-    <p style="font-family: 'Bitter', serif; margin-top: -1em;font-weight: 100;font-size: 20px;">Design The Meaning</p>
-  </hgroup>
+    </ul>  
+  </nav>  
 </header>
-
 <main>
+  <!-- // HERO // -->  
+  <div id="hero-title">
+  </div>
+
+  <!-- // end of HERO -->
+
   <!-- //  ABOUT  // -->
   <section id="about" class="bg-primary">
     <div class="content-wrap">
@@ -48,7 +53,6 @@
     </div>
   </section><!-- end of ABOUT -->
 
-
   <!-- //  PROJECTS  // -->
   <section id="projects" class="content-wrap">
     <h2>Projects</h2>
@@ -57,7 +61,7 @@
     <!-- Add more projects by copying the whole <section> block. -->
     <section class="project-item">
       <img srcset="/assets/images/cov_wmS.png,
-                    /assets/images/cov_wmL.png" src="/assets/images/cov_wmS.png" alt="project images">
+                  /assets/images/cov_wmL.png" src="/assets/images/cov_wmS.png" alt="project images">
 
 
       <div class="project-details">
@@ -80,7 +84,7 @@
   <section id="resume" class="resume bg-seaweedlight content-wrap">
     <h2>Resume</h2>   
       <img id="inlineFrameExample" title="Inline Frame Example" width="95%"
-      src= "assets/images/ReuchleinN_MDM_ResumeFinal.png" alt="resume">
+      src= "/assets/images/ReuchleinN_MDM_ResumeFinal.png" alt="resume">
   </img>
   </section><!-- end of RESUME -->
 </main>
