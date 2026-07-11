@@ -5,25 +5,6 @@ import HeroTitleAstroComponent from "../components/hero-title.astro";
 ---
 
 <BaseLayout title="Home">
-  <header>
-    <nav class="bg-dark">
-      <a href="#top"
-        ><img
-          src="/assets/images/dac_logoV02_20260424.png"
-          height="60px"
-          style="float: left;"
-          alt="Logo"
-        /></a
-      >
-      <ul class="list-reset nav-list">
-        <li><a href="#about">About</a>/</li>
-        <li><a href="#projects">Projects</a>/</li>
-        <li><a href="#resume">Resume</a>/</li>
-        <li><a href="/pages/journal.html">Journal</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <main>
     <!-- // HERO // -->
 
@@ -60,16 +41,18 @@ import HeroTitleAstroComponent from "../components/hero-title.astro";
       <!-- Add more projects by copying the whole <section> block. -->
       <section class="project-item">
         <img
-          srcset="/assets/images/cov_wmS.png,
-                  /assets/images/cov_wmL.png"
-          src="/assets/images/cov_wmS.png"
+          srcset="/src/images/cov_wmS.png,
+                  /src/images/cov_wmL.png"
+          src="/src/images/cov_wmS.png"
           alt="project images"
         />
 
         <div class="project-details">
           <h3>More Than Just Talk</h3>
           <p>Brand Building Thesis</p>
-          <a href="https://update.me" target="_blank">Link to project</a>
+          <a href="http://shunyamark.com/solut/" target="_blank"
+            >Link To Thesis</a
+          >
 
           <!-- Optional: use this list if you have multiple links for the project -->
           <!-- <ul>
@@ -88,7 +71,7 @@ import HeroTitleAstroComponent from "../components/hero-title.astro";
         id="inlineFrameExample"
         title="Inline Frame Example"
         width="95%"
-        src="/assets/images/ReuchleinN_MDM_ResumeFinal.png"
+        src="/src/images/ReuchleinN_MDM_ResumeFinal.png"
         alt="resume"
       />
     </section>

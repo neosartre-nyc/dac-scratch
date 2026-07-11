@@ -13,5 +13,19 @@
   },
   "dependencies": {
     "astro": "^7.0.7"
-  }
+  },
+  "description": "```sh npm create astro@latest -- --template minimal ```",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neosartre-nyc/dac_scratch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neosartre-nyc/dac_scratch/issues"
+  },
+  "homepage": "https://github.com/neosartre-nyc/dac_scratch#readme"
 }
