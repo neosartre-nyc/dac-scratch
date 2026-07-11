@@ -113,7 +113,7 @@ h4 {
 #hero {
     min-height: 80vh;
     background-image: linear-gradient(rgba(89, 14, 18, .5), rgba(89, 14, 18, .5)),
-        url(/assets/images/dac-bg-FP.jpg);
+        url(/src/images/dac-bg-FP.jpg);
     background-size: cover;
     background-position: top;
     display: flex;

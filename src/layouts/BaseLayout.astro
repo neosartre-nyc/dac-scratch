@@ -1,0 +1,42 @@
+---
+// src/layouts/BaseLayout.astro
+const { title = "Dangerous Angels Creative" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <header>
+    <nav class="bg-dark">
+      <a href="#top"
+        ><img
+          src="/src/images/"
+          "
+          assets
+          images
+          dac_logoV02_20260424.png"
+          height="60px"
+          style="float: left;"
+          alt="Logo"
+        /></a
+      >
+      <ul class="list-reset nav-list">
+        <li><a href="#about">About</a>/</li>
+        <li><a href="#projects">Projects</a>/</li>
+        <li><a href="#resume">Resume</a>/</li>
+        <li><a href="/pages/journal.html">Journal</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <slot />
+  </body>
+
+
+</html>
