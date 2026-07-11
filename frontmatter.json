@@ -46,12 +46,9 @@
       ]
     }
   ],
-  "frontMatter.content.pageFolders": [
-    {
-      "title": "pages",
-      "path": "[[workspace]]/pages"
-    }
-  ],
+  "frontMatter.content.pageFolders": [],
   "frontMatter.framework.id": "astro",
-  "frontMatter.preview.host": "http://localhost:4321"
+  "frontMatter.preview.host": "http://localhost:4321",
+  "frontMatter.content.publicFolder": "",
+  "frontMatter.git.enabled": true
 }

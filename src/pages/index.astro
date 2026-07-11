@@ -2,6 +2,9 @@
 // src/pages/index.astro
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroTitleAstroComponent from "../components/hero-title.astro";
+import Image from "astro/components/Image.astro";
+import covSmall from "../images/cov_wmS.png";
+import Summa from "../images/ReuchleinN_MDM_ResumeFinal.png";
 ---
 
 <BaseLayout title="Home">
@@ -40,13 +43,13 @@ import HeroTitleAstroComponent from "../components/hero-title.astro";
 
       <!-- Add more projects by copying the whole <section> block. -->
       <section class="project-item">
-        <img
-          srcset="/src/images/cov_wmS.png,
-                  /src/images/cov_wmL.png"
-          src="/src/images/cov_wmS.png"
-          alt="project images"
+        <Image
+          src={covSmall}
+          alt="resume"
+          width={400}
+          height={225}
+          sizes="(max-width: 600px) 100vw, 400px"
         />
-
         <div class="project-details">
           <h3>More Than Just Talk</h3>
           <p>Brand Building Thesis</p>
@@ -66,14 +69,8 @@ import HeroTitleAstroComponent from "../components/hero-title.astro";
 
     <!-- //  RESUME  // -->
     <section id="resume" class="resume bg-seaweedlight content-wrap">
-      <h2>Resume</h2>
-      <img
-        id="inlineFrameExample"
-        title="Inline Frame Example"
-        width="95%"
-        src="/src/images/ReuchleinN_MDM_ResumeFinal.png"
-        alt="resume"
-      />
-    </section>
-  </main><!-- end of RESUME -->
+      <h2>Résumé</h2>
+      <Image src={Summa} alt="resume" inferSize />
+    </section><!-- end of RESUME -->
+  </main>
 </BaseLayout>

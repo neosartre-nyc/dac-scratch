@@ -19,6 +19,8 @@
     "neilorangepeel",
     "Oakdale",
     "pastelyellow",
+    "Résumé",
+    "resumecontent",
     "Reuchlein",
     "richvelvetred",
     "seaweedlight",
@@ -29,8 +31,5 @@
     "Wearhouse",
     "workdmark",
     "zindex"
-  ],
-  "frontMatter.content.publicFolder": "",
-  "frontMatter.git.enabled": true,
-  "frontMatter.content.pageFolders": []
+  ]
 }
