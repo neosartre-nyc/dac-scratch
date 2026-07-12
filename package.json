@@ -27,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/neosartre-nyc/dac_scratch/issues"
   },
-  "homepage": "https://github.com/neosartre-nyc/dac_scratch#readme"
+  "homepage": "https://github.com/neosartre-nyc/dac_scratch#readme",
+  "allowScripts": {
+    "fsevents@2.3.3": true,
+    "esbuild@0.28.1": true
+  }
 }

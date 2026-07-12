@@ -2,8 +2,15 @@ import { defineConfig } from 'astro/config';
 import cloudflare from '@astrojs/cloudflare';
 
 export default defineConfig({
-  output: 'server',        // or 'hybrid' / 'static'
-  adapter: cloudflare({    // ← Now it's being used
-    imageService: 'cloudflare',   // or 'compile', 'cloudflare-binding', etc.
+  adapter: cloudflare({
+    // Try these options
+    runtime: 'workerd',
+    // or
+    platformProxy: { ... }
   }),
-});
+  vite: {
+    ssr: {
+      noExternal: ['some-problematic-package'] // if you have a specific package causing issues
+    }
+  }
+})

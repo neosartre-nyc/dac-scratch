@@ -160,46 +160,20 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
-    align-items: start;
-    /* Important: prevents stretching */
 }
 
 .project-item img {
     width: 100%;
-    height: auto;
-    /* ← This preserves aspect ratio */
-    display: block;
-    /* Removes any inline spacing */
-    border-radius: 6px;
-    /* Optional: nice touch */
 }
 
 /* Resume
 ----------------------------------------------- */
 .resume.content-wrap {
     max-width: 1200px;
-    margin: 0 auto;
-    /* centers the container */
     border-radius: 10px;
     background-color: var(--pastelyellow);
-    padding: 20px;
-    /* added some breathing room */
-    overflow: hidden;
-    /* keeps rounded corners clean */
 }
-
-/* Image styles */
-.resume.content-wrap img,
-.resumecontent-wrap img {
-    /* keeping both selectors just in case */
-    width: 80%;
-    height: auto;
-    display: block;
-    border-radius: 6px;
-    /* ← Strongly recommended */
-    object-fit: cover;
-    /* keeps it nice if the container crops a bit */
-}/* Project
+/* Project
 ----------------------------------------------- */
 
 /* footer
