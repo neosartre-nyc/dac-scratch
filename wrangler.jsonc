@@ -1,34 +1,4 @@
+// wrangler.jsonc
 {
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  // Top-level configuration
-  "name": "dangerousangelscreative",
-  "main": "src/index.js",
-  // Set this to today's date
-  "compatibility_date": "2026-07-11",
-  "workers_dev": false,
-  "route": {
-    "pattern": "dangerousanglescreative.com/*",
-    "zone_name": "dangerousanglescreative.com",
-  },
-  "kv_namespaces": [
-    {
-      "binding": "<MY_NAMESPACE>",
-      "id": "<KV_ID>",
-    },
-  ],
-  "env": {
-    "staging": {
-      "name": "my-worker-staging",
-      "route": {
-        "pattern": "staging.example.org/*",
-        "zone_name": "example.org",
-      },
-      "kv_namespaces": [
-        {
-          "binding": "<MY_NAMESPACE>",
-          "id": "<STAGING_KV_ID>",
-        },
-      ],
-    },
-  },
+"name": "dac-scratch"
 }
