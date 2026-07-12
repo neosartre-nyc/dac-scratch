@@ -3,10 +3,7 @@ import cloudflare from '@astrojs/cloudflare';
 
 export default defineConfig({
   adapter: cloudflare({
-    // Try these options
-    runtime: 'workerd',
-    // or
-    platformProxy: { ... }
+    runtime: 'worker',
   }),
   vite: {
     ssr: {
