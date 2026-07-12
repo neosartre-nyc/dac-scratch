@@ -1,4 +1,6 @@
 // wrangler.jsonc
 {
-"name": "dac-scratch"
+    "compatibility_date": "2026-07-12",
+    "main": "src/index.ts",
+    "name": "dac-scratch"
 }
