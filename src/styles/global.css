@@ -136,12 +136,36 @@ nav {
     left: 0;
     right: 0;
     height: 60px;
+}
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav img {
+    height: 40px;
+    width: auto;
+    max-height: 50px;
+    object-fit: contain;
+    cursor: pointer;
 }
 
 .nav-list {
     display: flex;
     justify-content: right;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-list a {
@@ -164,14 +188,44 @@ nav {
 
 .project-item img {
     width: 100%;
+    /* Fill the grid cell */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-width: 300px;
+    /* Cap the maximum width */
+    object-fit: cover;
+    /* Crop nicely if a fixed height is used */
+    border-radius: 8px;
+    /* Match the card's rounded aesthetic */
 }
-
 /* Resume
 ----------------------------------------------- */
 .resume.content-wrap {
     max-width: 1200px;
     border-radius: 10px;
     background-color: var(--pastelyellow);
+}
+
+/* Image controls for the resume */
+.resume.content-wrap img {
+    /* Sizing */
+    max-width: 100%;
+    height: auto;
+    max-height: 1500px;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+}
+
+/* Optional: Hover effect for interactive feel */
+.resume.content-wrap img:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
 }
 /* Project
 ----------------------------------------------- */

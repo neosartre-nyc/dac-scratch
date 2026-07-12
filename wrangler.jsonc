@@ -1,6 +1,10 @@
 // wrangler.jsonc
 {
-    "compatibility_date": "2026-07-12",
-    "main": "src/index.ts",
-    "name": "dac-scratch"
+  "main": "@astrojs/cloudflare/entrypoints/server",
+  "name": "dac-scratch",   // or whatever your project name is
+  "compatibility_date": "2026-05-11",   // update to a recent date
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+ }
 }

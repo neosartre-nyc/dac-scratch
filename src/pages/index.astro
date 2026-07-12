@@ -2,6 +2,9 @@
 // src/pages/index.astro
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroTitleAstroComponent from "../components/hero-title.astro";
+import { Image } from "astro:assets";
+import CovSmall from "../images/cov_wmS.png";
+import Summa from "../images/ReuchleinN_MDM_ResumeFinal.png";
 ---
 
 <BaseLayout title="Home">
@@ -37,15 +40,9 @@ import HeroTitleAstroComponent from "../components/hero-title.astro";
     <section id="projects" class="content-wrap">
       <h2>Projects</h2>
       <p>A selection of projects.</p>
-
       <!-- Add more projects by copying the whole <section> block. -->
       <section class="project-item">
-        <img
-          srcset="/src/images/cov_wmS.png,
-                  /src/images/cov_wmL.png"
-          src="/src/images/cov_wmS.png"
-          alt="project images"
-        />
+        <Image src={CovSmall} alt="projectImage" />
 
         <div class="project-details">
           <h3>More Than Just Talk</h3>
@@ -53,7 +50,6 @@ import HeroTitleAstroComponent from "../components/hero-title.astro";
           <a href="http://shunyamark.com/solut/" target="_blank"
             >Link To Thesis</a
           >
-
           <!-- Optional: use this list if you have multiple links for the project -->
           <!-- <ul>
           <li><a href="https://update.me" target="_blank">Link 1</a></li>
@@ -62,18 +58,13 @@ import HeroTitleAstroComponent from "../components/hero-title.astro";
         </ul> -->
         </div>
       </section>
-    </section><!-- end of PROJECTS -->
+    </section>
+    <!-- end of PROJECTS -->
 
     <!-- //  RESUME  // -->
     <section id="resume" class="resume bg-seaweedlight content-wrap">
-      <h2>Resume</h2>
-      <img
-        id="inlineFrameExample"
-        title="Inline Frame Example"
-        width="95%"
-        src="/src/images/ReuchleinN_MDM_ResumeFinal.png"
-        alt="resume"
-      />
+      <h2>Résumé</h2>
+      <Image src={Summa} alt="logo" />
     </section>
   </main><!-- end of RESUME -->
 </BaseLayout>

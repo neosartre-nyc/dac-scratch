@@ -2,6 +2,8 @@
 // src/layouts/BaseLayout.astro
 const { title = "Dangerous Angels Creative" } = Astro.props;
 import "../styles/global.css";
+import { Image } from "astro:assets";
+import Logo from "../images/dac_logo.png";
 ---
 
 <!doctype html>
@@ -14,17 +16,12 @@ import "../styles/global.css";
   </head>
   <header>
     <nav class="bg-dark">
-      <a href="/"
-        ><img
-          src="/src/images/dac_logo.png"
-          height="60px"
-          style="float: left;"
-          alt="Logo"
-        /></a
-      >
+      <a href="/">
+        <Image src={Logo} alt="logo" />
+      </a>
       <ul class="list-reset nav-list">
         <li><a href="/">About</a>/</li>
-        <li><a href="/">Projects</a>/</li>
+        <li><a href="/#projects">Projects</a>/</li>
         <li><a href="/#resume">Resume</a>/</li>
         <li><a href="/journal">Journal</a></li>
       </ul>
