@@ -129,11 +129,8 @@ h4 {
     opacity: 0;
     color: white;
     text-align: center;
-
-    /* Animation */
     animation: fadeInUp 0.8s forwards;
     animation-delay: 0.3s;
-    /* Optional: small delay after page load */
 }
 
 @keyframes fadeInUp {
