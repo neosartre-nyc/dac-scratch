@@ -1,0 +1,23 @@
+---
+import BaseLayoutAstroComponent from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import Summa from "../images/ReuchleinN_MDM_ResumeFinal.png";
+---
+
+<html lang="en">
+  <link href="/css/styles.css" rel="stylesheet" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journal</title>
+  <BaseLayoutAstroComponent>
+    <main style="padding-top: 100px;">
+      <!-- //  RESUME  // -->
+      <section id="resume" class="resume bg-seaweedlight content-wrap">
+        <h2>Résumé</h2>
+        <Image src={Summa} alt="resume" />
+      </section>
+      <!-- end of RESUME -->
+    </main>
+  </BaseLayoutAstroComponent>
+</html>
