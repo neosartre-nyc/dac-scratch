@@ -161,6 +161,17 @@ nav img {
     display: inline-block;
 }
 
+.nav-header {
+        display: flex;
+        justify-content: left;
+        text-decoration: none;
+        gap: 20px;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+}
+
 .nav-list {
     display: flex;
     justify-content: right;
