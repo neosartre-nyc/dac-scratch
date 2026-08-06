@@ -187,6 +187,28 @@ nav img {
     display: inline-block;
 }
 
+
+/* Philosophy 
+----------------------------------------------- */
+
+.philosophy.content-wrap {
+    max-width: 80%;
+    border-radius: 10px;
+    background-color: var(--pastelyellow);
+
+.philosophy table {
+        border-collapse: collapse;
+        width: 75%;
+    }
+
+    th,
+    td {
+        padding: 12px;
+        /* Adjust padding for better spacing */
+        border: 1px solid var(--darksage);
+        /* Add border for clarity */
+    }
+
 /* Project
 ----------------------------------------------- */
 
@@ -236,7 +258,8 @@ nav img {
 }
 
 /* Optional: Hover effect for interactive feel */
-.resume.content-wrap img:hover {
+
+.resume.content-wrap:hover {
     opacity: 0.9;
     transform: scale(1.02);
     transition: all 0.3s ease;
@@ -259,4 +282,5 @@ footer {
 .socials-list img {
     width: 35px;
     margin: 15px;
+}
 }
