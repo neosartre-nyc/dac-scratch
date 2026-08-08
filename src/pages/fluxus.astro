@@ -1,0 +1,23 @@
+---
+import BaseLayoutAstroComponent from "../layouts/BaseLayout.astro";
+import FluxusPageAstroComponent from "../components/fluxus-page.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fluxus</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <BaseLayoutAstroComponent>
+      <main style="padding-top: 100px;">
+        <div class="philosophy content-wrap">
+          <h1>Fluxus</h1>
+          <FluxusPageAstroComponent />
+        </div>
+      </main>
+    </BaseLayoutAstroComponent>
+  </body>
+</html>

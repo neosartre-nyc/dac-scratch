@@ -57,5 +57,5 @@ Our work draws from a constellation of provocateurs:
 | **Swiss Style** | Grid as logic | Modular systems that argue rather than display |
 | **Deconstructivist Architecture** | Fragmentation as honesty | Asymmetry that reveals structural tensions |
 | **Conceptual Art** | Idea precedes form | Work that survives without the object |
-| **Fluxus** | Process over product | Design as event, not artifact |
+| [**Fluxus**](fluxus) | Process over product | Design as event, not artifact |
 | **Black Mountain College** | Interdisciplinary collision | Artists, writers, designers operating as one organism |
