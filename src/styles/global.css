@@ -93,11 +93,37 @@ h4 {
     padding: 0;
 }
 
-.content-wrap {
-    max-width: 800px;
-    border-radius: 10px;
-    margin: 0 auto;
+.wrapper {
     padding: 60px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.wrapper--checklist {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--pastelyellow);
+}
+
+.wrapper--default {
+    max-width: 80%;
+    background-color: var(--pastelyellow)
+}
+
+.wrapper--wide {
+    max-width: 100%;
+    background-color: var(--pastelyellow)
+}
+
+.wrapper--narrow {
+    max-width: 60%;
+}
+.wrapper--narrow-background {
+    background-color: var(--pastelyellow)
 }
 
 .bitter-wild {
@@ -111,7 +137,7 @@ h4 {
 ----------------------------------------------- */
 
 #hero {
-    min-height: 80vh;
+    min-height: 80dvh;
     background-image: linear-gradient(rgba(89, 14, 18, .5), rgba(89, 14, 18, .5)),
         url(/src/images/dac-bg-FP.jpg);
     background-size: cover;
@@ -123,9 +149,9 @@ h4 {
 
 .hero-text {
     position: absolute;
-    top: 50%;
+    top: clamp(300px, 5vh, 60px);
     left: 50%;
-    transform: translate(-50%, -50%) translateY(30px);
+    transform: translateX(-50%);
     opacity: 0;
     color: white;
     text-align: center;
@@ -191,23 +217,18 @@ nav img {
 /* Philosophy 
 ----------------------------------------------- */
 
-.philosophy.content-wrap {
-    max-width: 80%;
-    border-radius: 10px;
-    background-color: var(--pastelyellow);
-
 .philosophy table {
-        border-collapse: collapse;
-        width: 75%;
-    }
+    border-collapse: collapse;
+    width: 75%;
+}
 
-    th,
-    td {
-        padding: 12px;
-        /* Adjust padding for better spacing */
-        border: 1px solid var(--darksage);
-        /* Add border for clarity */
-    }
+th,
+td {
+    padding: 12px;
+    /* Adjust padding for better spacing */
+    border: 1px solid var(--darksage);
+    /* Add border for clarity */
+
 
 /* Project
 ----------------------------------------------- */
@@ -236,51 +257,14 @@ nav img {
 }
 /* Resume
 ----------------------------------------------- */
-.resume.content-wrap {
-    max-width: 1200px;
-    border-radius: 10px;
-    background-color: var(--pastelyellow);
-}
 
-/* Image controls for the resume */
-.resume.content-wrap img {
-    /* Sizing */
-    max-width: 100%;
-    height: auto;
-    max-height: 1500px;
-    object-fit: contain;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin: 15px 0;
-}
 
-/* Optional: Hover effect for interactive feel */
-
-.resume.content-wrap:hover {
-    opacity: 0.9;
-    transform: scale(1.02);
-    transition: all 0.3s ease;
-}
 /* Project
 ----------------------------------------------- */
 
 /* Checklist
 ----------------------------------------------- */
 
-/* Checklist
------------------------------------------------ */
-.check-list.content-wrap {
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: var(--pastelyellow);
-}
 /* Customize the label (the checkmark) */
 .check-list {
     display: flex;
