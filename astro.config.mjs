@@ -11,13 +11,13 @@ export default defineConfig({
   vite: {
     // Force compatibility mode
     optimizeDeps: {
-      esbuildOptions: undefined,
+      rolldownOptions: {}
     },
 
     // Stronger warning suppression
     config: {
       onwarn(warning, warn) {
-        if (warning.message?.includes('optimizeDeps.esbuildOptions')) return;
+        if (warning.message?.includes('optimizeDeps.rolldownOptions')) return;
         warn(warning);
       },
     },
@@ -25,7 +25,7 @@ export default defineConfig({
     build: {
       rollupOptions: {
         onwarn(warning, warn) {
-          if (warning.message?.includes('optimizeDeps.esbuildOptions')) return;
+          if (warning.message?.includes('optimizeDeps.rolldownOptions')) return;
           warn(warning);
         },
       },

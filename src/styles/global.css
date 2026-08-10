@@ -99,16 +99,6 @@ h4 {
     box-sizing: border-box;
 }
 
-.wrapper--checklist {
-    max-width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: var(--pastelyellow);
-}
-
 .wrapper--default {
     max-width: 80%;
     background-color: var(--pastelyellow)
@@ -125,6 +115,30 @@ h4 {
 .wrapper--narrow-background {
     background-color: var(--pastelyellow)
 }
+.wrapper--checklist {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    border-radius: 10px;
+    background-color: var(--pastelyellow);
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button--red {
+    background-color: var(--darkauburn);
+}
 
 .bitter-wild {
     font-family: "Bitter", serif;
@@ -138,18 +152,19 @@ h4 {
 
 #hero {
     min-height: 80dvh;
-    background-image: linear-gradient(rgba(89, 14, 18, .5), rgba(89, 14, 18, .5)),
-        url(/src/images/dac-bg-FP.jpg);
+    background-image:
+        linear-gradient(rgba(89, 14, 18, .5), rgba(89, 14, 18, .5)),  /* top layer */
+        url(/src/images/dac-bg-FP.jpg);                                /* middle layer */
+    background-color: rgb(89, 14, 18);                                 /* bottom layer */
     background-size: cover;
     background-position: top;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .hero-text {
     position: absolute;
-    top: clamp(300px, 5vh, 60px);
+    top: clamp(350px, 5vh, 60px);
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -261,107 +276,6 @@ td {
 
 /* Project
 ----------------------------------------------- */
-
-/* Checklist
------------------------------------------------ */
-
-/* Customize the label (the checkmark) */
-.check-list {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    position: relative;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    width: 100%;
-    justify-content: flex-start;
-    /* Aligns checkbox and text to the left */
-}
-
-/* Hide the browser's default checkbox */
-.check-list input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-/* Create a custom checkbox */
-
-/* Customize the label (the container) */
-.check-list {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* Hide the browser's default checkbox */
-.check-list input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: var(--metallicseaweed);
-}
-
-/* On mouse-over, add a grey background color */
-.check-list:hover input~.checkmark {
-    background-color: var(--glossyyellow);
-}
-
-/* When the checkbox is checked, add a blue background */
-.check-list input:checked~.checkmark {
-    background-color: var(--richvelvetred);
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the checkmark when checked */
-.check-list input:checked~.checkmark:after {
-    display: block;
-}
-
-/* Style the checkmark/indicator */
-.check-list .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
 
 /* footer
 ----------------------------------------------- */
