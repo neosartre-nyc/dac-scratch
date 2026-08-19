@@ -2,7 +2,7 @@
 // src/pages/index.astro
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroTitleAstroComponent from "../components/hero-title.astro";
-import { Content } from "../components/philosophy.md";
+import Products from "../components/product-cards.astro";
 ---
 
 <BaseLayout title="Home">
@@ -35,7 +35,7 @@ import { Content } from "../components/philosophy.md";
     </section><!-- end of ABOUT -->
     <section id="philosophy">
       <div class="wrapper wrapper--wide">
-        <Content />
+        <Products />
       </div>
     </section>
   </main>

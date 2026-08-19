@@ -1,6 +1,12 @@
-# Meaning Engine
+# Brand Combat | Meaning Engine
+
+---
+
+---
 
 ## Reimagine
+
+---
 
 At Dangerous Angels Creative, we're not just designers - we're provocateurs. We make signs audible and intervene in interpretation.
 
@@ -9,6 +15,8 @@ Our practice isn't about decorating surfaces or selling you on "branding" as cos
 We're semioticians with keyboards, strategists with styluses, who treat every project as a rupture in the expected flow of meaning. Our goal is to expose the politics embedded in everyday objects and digital interfaces, even if it means disrupting their intended purpose.
 
 ## The Architecture
+
+---
 
 Our approach combines three strata of meaning production, inspired by the triadic model:
 
@@ -21,6 +29,8 @@ Our approach combines three strata of meaning production, inspired by the triadi
 ---
 
 ## Method
+
+---
 
 ### *Rupture*
 
@@ -42,11 +52,15 @@ We deliver not assets but ammunition. Design systems that train your people to t
 
 ## Practice Areas
 
+---
+
 * **Brand Architecture as Weaponry:** Semiotic fortresses for territory in cultural battles
 * **Interface as Interrogation:** Digital screens as sites of cognitive capture where attention is mined and meaning is extracted
 * **Cultural Excavation:** Before design begins, there's archaeology. We descend into your audience's interpretive unconscious to map the opponent's signifiers
 
 ## Visual Reference Pool
+
+---
 
 Our work draws from a constellation of provocateurs:
 
