@@ -336,3 +336,24 @@ footer {
 .product-card--label {
     padding: 2px 16px;
 }
+
+/* Footer 
+---------------------------------------*/
+footer {
+    text-align: center;
+    padding: 60px;
+}
+
+.socials-list {
+    display: flex;
+    justify-content: center;
+}
+
+.socials-list img {
+    width: 35px;
+    margin: 15px;
+}
+
+.copyright {
+    font-size: var(--font-size-small);
+}
