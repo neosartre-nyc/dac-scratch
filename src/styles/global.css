@@ -269,9 +269,7 @@ td {
 
 /* Resume
 ----------------------------------------------- */
-.resume-card {
-    
-}
+
 .resume-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.25);
