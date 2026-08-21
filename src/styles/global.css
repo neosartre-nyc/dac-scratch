@@ -94,7 +94,7 @@ h4 {
 }
 
 .wrapper {
-    padding: 100px;
+    padding: 6.25rem;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -121,24 +121,24 @@ h4 {
     flex-direction: column;
     align-items: left;
     justify-content: left;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: var(--pastelyellow);
 }
 
 .content-wrap {
-    max-width: 800px;
+    max-width: 50rem;
     margin: 0 auto;
-    padding: 60px;
+    padding: 3.75rem;
 }
 
 .button {
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 1rem 2rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -170,7 +170,7 @@ h4 {
 }
 .hero-text {
     position: absolute;
-    top: clamp(350px, 5vh, 60px);
+    top: clamp(20rem, 5vh, 3.75rem);
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -192,17 +192,17 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 3.75rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 nav img {
-    height: 40px;
+    height: 2.5rem;
     width: auto;
-    max-height: 50px;
+    max-height: 3.125rem;
     object-fit: contain;
     cursor: pointer;
     display: inline-block;
@@ -212,7 +212,7 @@ nav img {
         display: flex;
         justify-content: left;
         text-decoration: none;
-        gap: 20px;
+        gap: 1.25rem;
         align-items: center;
         list-style: none;
         margin: 0;
@@ -222,7 +222,7 @@ nav img {
 .nav-list {
     display: flex;
     justify-content: right;
-    gap: 20px;
+    gap: 1.25rem;
     align-items: center;
     list-style: none;
     margin: 0;
@@ -230,7 +230,7 @@ nav img {
 }
 
 .nav-list a {
-    padding: 5px;
+    padding: 0.25rem;
     display: inline-block;
 }
 
@@ -245,7 +245,7 @@ nav img {
 
 th,
 td {
-    padding: 12px;
+    padding: 0.75rem;
     /* Adjust padding for better spacing */
     border: 1px solid var(--darksage);
     /* Add border for clarity */
@@ -256,11 +256,11 @@ td {
 
 .project-item {
         border: 1px solid var(--color-primary);
-        padding: 20px;
-        margin-bottom: 10px;
+        padding: 1.25rem;
+        margin-bottom: 0.625rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
+        column-gap: 1.25rem;
     }
 
     .project-item img {
@@ -272,7 +272,7 @@ td {
 
 .resume-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.75rem 2rem -8px rgba(0, 0, 0, 0.25);
 }
 /* Project
 ----------------------------------------------- */
@@ -282,7 +282,7 @@ td {
 ----------------------------------------------- */
 footer {
     text-align: center;
-    padding: 60px;
+    padding: 3.75rem;
 }
 
 .socials-list {
@@ -291,8 +291,8 @@ footer {
 }
 
 .socials-list img {
-    width: 35px;
-    margin: 15px;
+    width: 30.25rem;
+    margin: 10.25rem;
 }
 }
 
@@ -303,7 +303,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* 3 equal columns */
-    gap: 20px;
+    gap: 1.25rem;
     /* Space between cards */
 }
 
@@ -311,16 +311,16 @@ footer {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--color-primary);
-    padding: 20px;
+    padding: 1.25rem;
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 0.25rem;
     transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
                 box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product-card:hover{
     transform: translateY(-4px);
-    box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.75rem 2rem -8px rgba(0, 0, 0, 0.25);
 }
 .product-card img {
     height: auto;
@@ -328,20 +328,21 @@ footer {
     /* Scale to fill the card width */
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 
 
 .product-card--label {
-    padding: 2px 16px;
+    padding: 2px 1rem;
+    text-align: center;
 }
 
 /* Footer 
 ---------------------------------------*/
 footer {
     text-align: center;
-    padding: 60px;
+    padding: 3.75rem;
 }
 
 .socials-list {
@@ -350,8 +351,8 @@ footer {
 }
 
 .socials-list img {
-    width: 35px;
-    margin: 15px;
+    width: 2rem;
+    margin: 1rem;
 }
 
 .copyright {
