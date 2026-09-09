@@ -11,20 +11,19 @@
     --darksage: #767856;
     --pastelyellow: #f1e7d8;
     --solidmattegray: #757575;
-    --color-dark: var(--richvelvetred);
+    --color-dark: var(--daintree);
     --color-light: var(--pastelyellow);
     --color-medium: var(--seaweedlight);
     --color-primary: var(--daintree);
 
-    --font-size-h1: 5.5rem;
+    --font-size-h1: 6rem;
 
-    --font-size-h2: 3rem;
-    --font-size-base: 0.9375rem;
+    --font-size-h2: 4rem;
+    --font-size-base: 16px;
     --font-size-tagline: 1.3rem;
     --font-size-small: 0.7rem;
 
 }
-
 /* Global Styles 
 ---------------------------------------*/
 /* Alternative box model */
@@ -47,10 +46,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Noto Sans", sans-serif;
+    font-size: 1.2rem ;
+    font-weight: 200;
 }
 
 a {
     color: var(--color-dark);
+    text-decoration: none;
+    font-weight: 200 ;
 }
 
 h1,
@@ -59,6 +62,7 @@ h3,
 h4 {
     margin: 0;
     font-family: "Bitter", serif;
+    font-weight: 300;
 
 }
 
@@ -186,19 +190,6 @@ h4 {
         transform: translate(-50%, -50%);
     }
 }
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3.75rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1.25rem;
-}
-
 nav img {
     height: 2.5rem;
     width: auto;
@@ -207,6 +198,25 @@ nav img {
     cursor: pointer;
     display: inline-block;
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3.75rem;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+}
+
+@media screen and (min-width: 500px) {
+    nav {
+        display: flex;
+    }
+}
+
 
 .nav-header {
         display: flex;
@@ -232,6 +242,94 @@ nav img {
 .nav-list a {
     padding: 0.25rem;
     display: inline-block;
+}
+
+.menu-toggle {
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    z-index: 2;
+}
+
+@media screen and (min-width: 1000px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+/* some common styles for the both of the pseudo-elements */
+.menu-toggle span:after,
+.menu-toggle span:before {
+    background-color: black;
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+}
+
+/* move the first line to the bottom */
+.menu-toggle span:after {
+    bottom: 0;
+}
+
+/* and the second one up */
+.menu-toggle span:before {
+    top: 0;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked~nav {
+    /* make the menu visible  */
+    display: flex;
+
+    /* change the menu layout from horizontal to vertical */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* make the menu stick to the top of the page */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1rem;
+
+    background-color: darkgray;
+}
+
+/* add vertical spacing to elements inside the nav element */
+#menu-checkbox:checked~nav a {
+    margin: 2px 0;
+}
+
+/* if the menu is open and the page size is bigger than 500 px, keep the close button visible */
+@media screen and (min-width: 1000px) {
+    #menu-checkbox:checked~.menu-toggle {
+        display: flex;
+    }
+}
+
+#menu-checkbox:checked~.menu-toggle span {
+    background-color: transparent;
+}
+
+/* move the upper line to the center and rotate it by 45 degrees clockwise */
+#menu-checkbox:checked~.menu-toggle span:before {
+    transform: rotate(45deg);
+    top: auto;
+}
+
+/* move the bottom line to the center and rotate it by 45 degrees counterclockwise */
+#menu-checkbox:checked~.menu-toggle span:after {
+    transform: rotate(-45deg);
+    bottom: auto;
 }
 
 
@@ -319,7 +417,7 @@ footer {
 }
 
 .product-card:hover{
-    transform: translateY(-4px);
+    transform: scale(1.1);
     box-shadow: 0 0.75rem 2rem -8px rgba(0, 0, 0, 0.25);
 }
 .product-card img {

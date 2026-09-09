@@ -14,7 +14,11 @@ import Logo from "../images/dac_logo.png";
     <title>{title}</title>
     <link rel="stylesheet" href="/styles/global.css" />
   </head>
+
   <header>
+    <input type="checkbox" id="menu-checkbox" />
+    <label class="menu-toggle" for="menu-toggle"><span></span></label>
+
     <nav class="bg-dark">
       <a class="nav-header" href="/">
         <Image src={Logo} alt="logo" />
