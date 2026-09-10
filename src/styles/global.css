@@ -404,6 +404,11 @@ footer {
     gap: 1.25rem;
     /* Space between cards */
 }
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
 
 .product-card {
     display: flex;
